@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <title>ORDD - Onboarding 3</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+        <div class="onboarding-page">
+            <div class="container">
+                <div class="obp-header">
+                    <div class="col-left">
+                        <img src="assets/images/onboarding-logo.svg" align="Logo">
+                    </div>
+                    <div class="col-right">
+                        <h1>Product Delivery Date Pro for WooCommerce</h1>
+                    </div>
+                </div>
+
+                <div class="obp-content">
+                    <div class="wbc-box">
+                        <div class="wbc-head">
+                            <h2>Enable Delivery Date For The New Product</h2>
+                            <p>This is dummy text. Changes as necessary. Please enable the bussines day of your store so all of calculations of cut-off time and minumum delivery time will be done based on these weekdays and not based on delivery weekdays.</p> 
+                        </div>
+                        <div class="wbc-content">
+                            <div class="tbl-mod-1">
+                                <div class="tm1-row dw-row">
+                                    <div class="col-left">
+                                        <label>Enable Delivery Date:</label>
+                                    </div>
+                                    <div class="col-right">
+                                        <div class="row-box-1">
+                                            <div class="rb1-left">
+                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                            </div>
+                                            <div class="rb1-right">
+                                                <div class="rb1-row">
+                                                    <label class="el-switch el-switch-green">
+                                                        <input type="checkbox" name="cb_opt_nm_45" value="cb_opt_val_45" id="sdw_delivery_week" checked>
+                                                        <span class="el-switch-style"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table class="for-action">
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-primary blue-button btn-sm add-new">Save Setting</button>
+                                                <a class="edit-delvry-sche edit" data-toggle="collapse" href="#" id="action-edit" role="button" aria-expanded="false" aria-controls="collapseExample"> Edit</a>
+                                                <a class="enable" title="Enable">Enable</a>
+                                                <a class="disable action-disable" title="Disable">Disable</a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <div class="tbl-mod-2 flx-100 mt-20 tbl-responsive-sm">
+                                        <div class="tm2-inner-wrap" >
+                                            <div class="wbc-head"></div>
+                                            <div class="tm1-row dw-row">
+                                                <div class="col-left">
+                                                    <label>Delivery Option:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <div class="rb-flx-style">
+                                                            <div class="el-radio el-radio-green">
+                                                                <input type="radio" name="rb_opt_nm_7" id="7_1" value="rb_opt_val_3">
+                                                                <label class="el-radio-style" for="7_1"></label>
+                                                            </div>
+                                                            <label for="7_1">Calendar</label>
+                                                        </div>
+                                                        <div class="rb-flx-style">
+                                                            <div class="el-radio el-radio-green">
+                                                                <input type="radio" name="rb_opt_nm_7" id="7_2" value="rb_opt_val_4">
+                                                                <label class="el-radio-style mb-0" for="7_2"></label>
+                                                            </div>
+                                                            <label for="7_2">Text Block</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wbc-head"></div>
+                                            <div class="tm1-row dw-row">
+                                                <div class="col-left">
+                                                    <label>Delivery On:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <div class="rb-flx-style">
+                                                            <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                <input type="checkbox" class="ckbCheckAll" id="cb_opt_nm_9A" value="cb_opt_val_9" checked>
+                                                                <label class="el-checkbox-style mb-0" for="cb_opt_nm_9A"></label>
+                                                            </div>
+                                                            <label for="7_1">Specific Dates</label>
+                                                        </div>
+                                                        <div class="rb-flx-style">
+                                                            <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                <input type="checkbox" class="ckbCheckAll" id="cb_opt_nm_9A" value="cb_opt_val_9" checked>
+                                                                <label class="el-checkbox-style mb-0" for="cb_opt_nm_9A"></label>
+                                                            </div>
+                                                            <label for="7_2">Recurring Weekdays</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <table class="table" id="set-time-slote-onb4"  >
+                                                <thead>
+                                                    <tr>
+                                                        
+                                                        <th><span>Delivery Days/Dates</span></th>
+                                                        <th><span>Additional Charges</span></th>
+                                                        <th><span>Charges Label </span></th>
+                                                        <th><span>Maximum Deliveries</span></th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="cloned-row">
+                                                        <td><span>10-06-2021</span></td>
+                                                        <td>$28</td>
+                                                        <td>Charges Label</td>
+                                                        <td>10</td>
+                                                        <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete">Delete</a>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="cloned-row">
+                                                        <td><span>Sunday</span></td>
+                                                        <td>$20</td>
+                                                        <td>Charges Label</td>
+                                                        <td>N/A</td>
+                                                        <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="Delete" title="Enable">Enable</a>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="cloned-row">
+                                                        <td><input class="ib-small" type="text" name="" placeholder="Monday"></td>
+                                                        <td><input class="ib-sm ib-small" type="number" name="" placeholder="$20"></td>
+                                                        <td><input class="ib-small" type="text" name="" placeholder="Charges label"></td>
+
+                                                        <td>N/A</td>
+                                                        <td>
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete">Delete</a>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="cloned-row">
+                                                        
+                                                        <td><input class="ib-small" type="text" name="" placeholder="Select Days"></td>
+                                                        <td><input class="ib-sm ib-small" type="number" name="" placeholder="$"></td>
+                                                        <td><input class="ib-small" type="text" name="" placeholder="Charges label"></td>
+                                                        
+                                                        <td class="tbl-action-col-sm">
+                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                            <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                            <a class="delete" title="Delete">Delete</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="add-more-link link-flx">
+                                            <a class="al-link add-time-slote-onb4"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add More</a>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="abulk-box tbl-responsive-sm">
+                                        <select class="ib-small">
+                                            <option>Bulk Action</option>
+                                            <option>Delete</option>
+                                        </select>
+                                        <button class="trietary-btn reverse" type="button">Apply</button>
+                                    </div>
+                                </div>
+
+                                
+
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="obp-footer">
+                    <div class="col-left">
+                        <a class="link-grey lg-w-arrow" href="onboarding-3.html">Back</a>
+                        <a class="link-grey" href="welcome-page.html">Skip</a>
+                    </div>
+                    <div class="col-right">
+                        <a class="button" href="onboarding-5.html">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
