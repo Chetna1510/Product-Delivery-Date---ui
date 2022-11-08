@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/choices.min.css">
+    <title>PRDD - View Delivery Calendar</title>
+</head>
+<body>
+    <div class="prdd-page" id="prdd-page">
+        <!--header start-->
+        <div class="prdd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/prdd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light prdd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="calendar-appearance.html">Appearance</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="view-deliveries-calendar.html">View Deliveries</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="bulk-product-settings.html">Bulk Product Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="holidays.html">Holidays</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="prdd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header end-->
+
+        <!--Content area-->
+        <div class="prdd-area prdd-page-head">
+            <div class="container bd-page-wrap as-page">
+                <div class="row">
+                    <div class="col-md-12">
+                      <div class="phw-btn mb-3 d-flex">
+                         <h1 class="mr-3">All Deliveries</h1>
+                      </div>
+                    </div>
+                   
+                    <div class="col-md-12">
+                        <div class="tm1-row bdr-0 pt-0 delvry-sch-bottom mb-4">
+                           <div class="abulk-box pt-0 ">
+                            <label></label>
+                            <select class="ib-small" name="calendar-view">
+                               <option value="Calendar View">Calendar View</option>
+                               <option value="Calendar View">Calendar View</option>
+                            </select>
+                           </div>
+                           <div class="action-url">
+                              <a class="mr-3" href=""><i class="fas fa-file-alt"></i> CSV</a>
+                              <a href=""><i class="fas fa-print"></i> Print</a>
+                              <a href=""><i class="bi bi-box-arrow-up-right"></i> Add to Google Calendar</a>
+                           </div>
+                        </div>
+                     </div>
+                   <div class="col-md-12">
+                      <div class="rc-flx-wrap d-flex align-items-end flx-aln-center mb-4">
+                        <div class="select-box mr-3">
+                            <label>Start Date:</label>
+                            <select class="ib-small" name="min-time">
+                               <option value="10-06-2022">10-06-2022</option>
+                               <option value="11-06-2022">11-06-2022</option>
+                            </select>
+                        </div>
+                         <div class="select-box mr-3">
+                            <label>End Date:</label>
+                            <select class="ib-small" name="min-time">
+                               <option value="22-06-2022">22-06-2022</option>
+                               <option value="23-06-2022">23-06-2022</option>
+                            </select>
+                         </div>
+                         <div class="select-box mr-3">
+                            <button class="trietary-btn reverse" type="button">Apply filters</button>
+                         </div>
+                      </div>
+                   </div>
+                   
+                   <div class="col-md-12">
+                    <div class="booking-links d-flex justify-content-between align-items-center mb-3">
+                       <div class="booking-links-left">
+                          <a class="black-text" href="">All <span>(13)</span></a> | <a href="">Delivery from Today Onwards<span>(0)</span></a> | <a href="">Today's Deliveries <span>(4)</span></a> | <a href="">Tomorrow's Deliveries <span>(1)</span></a>
+                       </div>
+                    </div>
+                 </div>
+                   <div class="col-md-12">
+                      <div class="wbc-box">
+                         <div class="tm2-inner-wrap tbl-responsive">
+                            <div class="booking-table">
+                               <table class="table mb-0">
+                                  <thead>
+                                     <tr>
+                                        <th>Order Id</th>
+                                        <th>Email Address</th>
+                                        <th>Product Name</th>
+                                        <th>Delivery Date</th>
+                                        <th>Delivery Time</th>
+                                        <th>Quantity</th>
+                                        <th>Amount</th>
+                                        <th>Order Date</th>
+                                        <th>Actions</th>
+                                     </tr>
+                                  </thead>
+                                  <tbody>
+                                     <tr class="cloned-row"> 
+                                        <td>
+                                           <a href="">1150</a>
+                                           <p class="mb-0">Upendra Patel</p>  
+                                        </td>
+                                        <td>upendra@gmail.com</td>
+                                        <td>Delivery Dates with timeslots,<br>Product Delivery Date</td>
+                                        <td>04/20/22</td>
+                                        <td> 10:00 - 11:00 </td>
+                                        <td>3</td>
+                                        <td>$250</td>
+                                        <td>04/20/22</td>
+                                        <td>
+                                            <a href="#">View Order</a>
+                                        </td>
+                                     </tr>
+                                     <tr class="cloned-row"> 
+                                        <td>
+                                           <a href="">1150</a>
+                                           <p class="mb-0">Upendra Patel</p>  
+                                        </td>
+                                        <td>upendra@gmail.com</td>
+                                        <td>Delivery Dates with timeslots,<br>Product Delivery Date</td>
+                                        <td>04/20/22</td>
+                                        <td> 10:00 - 11:00 </td>
+                                        <td>3</td>
+                                        <td>$250</td>
+                                        <td>04/20/22</td>
+                                        <td>
+                                            <a href="#">View Order</a>
+                                        </td>
+                                     </tr>
+                                     
+                                     <tr class="cloned-row"> 
+                                        <td>
+                                           <a href="">1150</a>
+                                           <p class="mb-0">Upendra Patel</p>  
+                                        </td>
+                                        <td>upendra@gmail.com</td>
+                                        <td>Delivery Dates with timeslots,<br>Product Delivery Date</td>
+                                        <td>04/20/22</td>
+                                        <td> 10:00 - 11:00 </td>
+                                        <td>3</td>
+                                        <td>$250</td>
+                                        <td>04/20/22</td>
+                                        <td>
+                                            <a href="#">View Order</a>
+                                        </td>
+                                     </tr>
+                                     <tr class="cloned-row"> 
+                                        <td>
+                                           <a href="">1150</a>
+                                           <p class="mb-0">Upendra Patel</p>  
+                                        </td>
+                                        <td>upendra@gmail.com</td>
+                                        <td>Delivery Dates with timeslots,<br>Product Delivery Date</td>
+                                        <td>04/20/22</td>
+                                        <td> 10:00 - 11:00 </td>
+                                        <td>3</td>
+                                        <td>$250</td>
+                                        <td>04/20/22</td>
+                                        <td>
+                                            <a href="#">View Order</a>
+                                        </td>
+                                     </tr>
+                                  </tbody>
+                                  <thead>
+                                     <tr>
+                                        <th>Order Id</th>
+                                        <th>Email Address</th>
+                                        <th>Product Name</th>
+                                        <th>Delivery Date</th>
+                                        <th>Delivery Time</th>
+                                        <th>Quantity</th>
+                                        <th>Amount</th>
+                                        <th>Order Date</th>
+                                        <th>Actions</th>
+                                     </tr>
+                                  </thead>
+                               </table>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   
+                </div>
+             </div>
+        </div>
+        <!--Content Area - End-->
+
+         <!--footer-->
+         <div class="prdd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We're always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer End-->
+        <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-tokenfield.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </div>
+</body>
+</html>

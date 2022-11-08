@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <title>PRDD - Holidays</title>
+</head>
+<body>
+    <div class="prdd-page" id="prdd-page">
+        <!--header start-->
+        <div class="prdd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/prdd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light prdd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="calendar-appearance.html">Appearance</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="view-deliveries-calendar.html">View Deliveries</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="bulk-product-settings.html">Bulk Product Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="holidays.html">Holidays</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="prdd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header end-->
+
+        <!--content area-->
+        <div class="prdd-content-area">
+            <div class="container holidays-page-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="prdd-page-head">
+                            <h1>Holidays</h1>
+                            <p>Holidays descriptions goes here.....</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="holiday-content-area">
+                            <div class="panel-group prdd-accordian" id="wbc-accordion">                               
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
+                                            Holidays
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row flx-center">
+                                                    <div class="col-left">
+                                                        <label>Use Global Holidays:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_30" value="cb_opt_val_30" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                                
+                                                    <div class="tbl-mod-2">
+                                                        <div class="tm2-inner-wrap tbl-responsive">
+                                                            <div class="globle-holidy">
+                                                                <table class="table" id="global-holidays">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                    <input type="checkbox" class="ckbCheckAll" id="cb_opt_nm_17" value="cb_opt_val_17">
+                                                                                    <label class="el-checkbox-style mb-0" for="cb_opt_nm_17"></label>
+                                                                                </div>                                                      
+                                                                            </th>
+                                                                            <th>Name</th>
+                                                                            <th>Date</th>
+                                                                            <th>Type</th>
+                                                                            <th>Actions</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="cloned-row">
+                                                                            <td>
+                                                                                <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                    <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_18" value="cb_opt_val_18">
+                                                                                    <label class="el-checkbox-style mb-0" for="cb_opt_nm_18"></label>
+                                                                                </div>
+                                                        
+                                                                            </td>
+                                                                            <td>Thanksgiving Day</td>
+                                                                            <td>12-06-2021</td>
+                                                                            <td>Current Year Only</td>
+                                                                            <td>
+                                                                                <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                <a class="globle-holidy-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                                            </td>
+                                                                        </tr>
+    
+                                                                        <tr class="cloned-row">
+                                                                            <td>
+                                                                                <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                    <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_19" value="cb_opt_val_19">
+                                                                                    <label class="el-checkbox-style mb-0" for="cb_opt_nm_19"></label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>Christmas Day</td>
+                                                                            <td>12-06-2021  To  20-06-2021</td>
+                                                                            <td>Recurring Every Year</td>
+                                                                            <td class="tbl-action-col-sm">
+                                                                                <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                <a class="globle-holidy-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                <a class="delete" title="Delete">Delete</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            
+                                                            
+                                                            <div class="add-more-link">
+                                                                <a class="al-link add-more-holidays"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add More</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="tm1-row bdr-0 pt-0 delvry-sch-bottom">
+                                                        <div class="abulk-box pt-0 ">
+                                                            <select class="ib-small">
+                                                                <option>Bulk Action</option>
+                                                                <option>Edit</option>
+                                                            </select>
+                                                            <button class="trietary-btn reverse" type="button">Apply</button>
+                                                        </div>
+    
+                                                        
+                                                    </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="ss-foot">
+                                        <button type="button">Save Settings</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Content Area End-->
+
+        <!--footer-->
+        <div class="prdd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We're always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer End-->
+        <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-tokenfield.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </div>
+</body>
+</html>
