@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/choices.min.css">
+    <title>PRDD - View Delivery Calendar</title>
+</head>
+<body>
+    <div class="prdd-page" id="prdd-page">
+        <!--header start-->
+        <div class="prdd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/prdd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light prdd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="calendar-appearance.html">Appearance</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="view-deliveries-calendar.html">View Deliveries</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="bulk-product-settings.html">Bulk Product Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="holidays.html">Holidays</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="prdd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header end-->
+
+        <!--Content area-->
+        <div class="prdd-content-area">
+            <div class="container bd-page-wrap as-page">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="prdd-page-head phw-btn justify-content-between">
+                            <div class="col-left">
+                                <h1>Multiple Products Delivery</h1>
+                                <p>Add delivery settings for multiple products together. Selected settings will be shown on the selected edit product place.</p>
+                            </div>
+                            <div class="col-right">
+                                <button type="button">Save Settings</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="wbc-box">
+                            <div class="wbc-head d-flex justify-content-between align-items-center">
+                                <h2>Multiple Products Delivery Settings</h2>                                
+                            </div>
+                            <div class="wbc-content">
+                                <div class="tbl-mod-1">
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>Products:</label>
+                                        </div>
+                                        <div class="col-right d-flex">
+                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                            <div class="bs-example">
+                                                <label>Select Products:</label>
+                                                <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Products and/or Categories" multiple>
+                                                    <option value="0">Products in Accessories Category</option>
+                                                    <option value="1">Products in Decor Category</option>
+                                                    <option value="2">Products in Hoodies Category</option>
+                                                    <option value="3">Products in Clothing Category</option>
+                                                    <option value="4">Products in Music Category</option>
+                                                </select> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tbl-mod-1">
+                                        <div class="tm1-row">
+                                            <div class="col-left">
+                                                <label>Products Categories And Tags:</label>
+                                            </div>
+                                            <div class="col-right d-flex">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip content goes here">
+                                                <div class="bs-example">
+                                                    <label>Select Products Categories and tags:</label>
+                                                    <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Products and/or Categories" multiple>
+                                                        <option value="0">Clothing</option>
+                                                        <option value="1">Music</option>
+                                                    </select> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tbl-mod-1">
+                                        <div class="tm1-row">
+                                            <div class="col-left">
+                                                <label>Override Existing product Settings?</label>
+                                            </div>
+                                            <div class="col-right d-flex">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                    <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                    <label class="el-switch el-switch-green">
+                                                        <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked="">
+                                                        <span class="el-switch-style"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wbc-content p-0">
+                                <div class="tbl-mod-1">
+                                    <div class="tm1-row p-0">
+                                        <div class="col-left">
+                                            <div class="col-sidebar">
+                                       <ul>
+                                            <li>
+                                                <a class="active" href="bulk-product-settings.html">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66667 8.66667H6.66667C7.03333 8.66667 7.33333 8.36667 7.33333 8V2.66667C7.33333 2.3 7.03333 2 6.66667 2H2.66667C2.3 2 2 2.3 2 2.66667V8C2 8.36667 2.3 8.66667 2.66667 8.66667ZM2.66667 14H6.66667C7.03333 14 7.33333 13.7 7.33333 13.3333V10.6667C7.33333 10.3 7.03333 10 6.66667 10H2.66667C2.3 10 2 10.3 2 10.6667V13.3333C2 13.7 2.3 14 2.66667 14ZM9.33333 14H13.3333C13.7 14 14 13.7 14 13.3333V8C14 7.63333 13.7 7.33333 13.3333 7.33333H9.33333C8.96667 7.33333 8.66667 7.63333 8.66667 8V13.3333C8.66667 13.7 8.96667 14 9.33333 14ZM8.66667 2.66667V5.33333C8.66667 5.7 8.96667 6 9.33333 6H13.3333C13.7 6 14 5.7 14 5.33333V2.66667C14 2.3 13.7 2 13.3333 2H9.33333C8.96667 2 8.66667 2.3 8.66667 2.66667Z" fill="#41278D"/>
+                                                </svg>
+                                                Delivery Options <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="active" href="bulk-product-settings.html">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66667 8.66667H6.66667C7.03333 8.66667 7.33333 8.36667 7.33333 8V2.66667C7.33333 2.3 7.03333 2 6.66667 2H2.66667C2.3 2 2 2.3 2 2.66667V8C2 8.36667 2.3 8.66667 2.66667 8.66667ZM2.66667 14H6.66667C7.03333 14 7.33333 13.7 7.33333 13.3333V10.6667C7.33333 10.3 7.03333 10 6.66667 10H2.66667C2.3 10 2 10.3 2 10.6667V13.3333C2 13.7 2.3 14 2.66667 14ZM9.33333 14H13.3333C13.7 14 14 13.7 14 13.3333V8C14 7.63333 13.7 7.33333 13.3333 7.33333H9.33333C8.96667 7.33333 8.66667 7.63333 8.66667 8V13.3333C8.66667 13.7 8.96667 14 9.33333 14ZM8.66667 2.66667V5.33333C8.66667 5.7 8.96667 6 9.33333 6H13.3333C13.7 6 14 5.7 14 5.33333V2.66667C14 2.3 13.7 2 13.3333 2H9.33333C8.96667 2 8.66667 2.3 8.66667 2.66667Z" fill="#41278D"/>
+                                                </svg>
+                                                Settings <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="active" href="bulk-product-settings.html">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66667 8.66667H6.66667C7.03333 8.66667 7.33333 8.36667 7.33333 8V2.66667C7.33333 2.3 7.03333 2 6.66667 2H2.66667C2.3 2 2 2.3 2 2.66667V8C2 8.36667 2.3 8.66667 2.66667 8.66667ZM2.66667 14H6.66667C7.03333 14 7.33333 13.7 7.33333 13.3333V10.6667C7.33333 10.3 7.03333 10 6.66667 10H2.66667C2.3 10 2 10.3 2 10.6667V13.3333C2 13.7 2.3 14 2.66667 14ZM9.33333 14H13.3333C13.7 14 14 13.7 14 13.3333V8C14 7.63333 13.7 7.33333 13.3333 7.33333H9.33333C8.96667 7.33333 8.66667 7.63333 8.66667 8V13.3333C8.66667 13.7 8.96667 14 9.33333 14ZM8.66667 2.66667V5.33333C8.66667 5.7 8.96667 6 9.33333 6H13.3333C13.7 6 14 5.7 14 5.33333V2.66667C14 2.3 13.7 2 13.3333 2H9.33333C8.96667 2 8.66667 2.3 8.66667 2.66667Z" fill="#41278D"/>
+                                                </svg>
+                                                Delivery Time Period <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </li>
+                                          
+                                            <li>
+                                                <a class="active" href="bulk-product-settings.html">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3359 2.66602H2.66927C1.92927 2.66602 1.3426 3.25935 1.3426 3.99935L1.33594 11.9993C1.33594 12.7393 1.92927 13.3327 2.66927 13.3327H13.3359C14.0759 13.3327 14.6693 12.7393 14.6693 11.9993V3.99935C14.6693 3.25935 14.0759 2.66602 13.3359 2.66602ZM12.6693 11.9993H3.33594C2.96927 11.9993 2.66927 11.6993 2.66927 11.3327V7.99935H13.3359V11.3327C13.3359 11.6993 13.0359 11.9993 12.6693 11.9993ZM13.3359 5.33268H2.66927V3.99935H13.3359V5.33268Z" fill="#A7ACB1"/>
+                                                </svg>
+                                                Delivery Charges <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </li>
+                                          
+                                       </ul>
+                                    </div>
+                                        </div>
+                                        <div class="col-right">                                            
+                                            <div class="tbl-mod-1">
+                                                <div class="d-flex justify-content-between">
+                                                    <h2>Delivery Options</h2>                                
+                                                </div>
+                                                <div class="tm1-row align-items-center">                                                    
+                                                    <div class="col-left">
+                                                        <label>Enable Delivery Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_21" value="cb_opt_val_21" checked="">
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Delivery Option:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <div class="rb-flx-style">
+                                                                <div class="el-radio el-radio-green">
+                                                                    <input type="radio" name="rb_opt_nm_7" id="0_1" value="rb_opt_val_3">
+                                                                    <label class="el-radio-style" for="0_1"></label>
+                                                                </div>
+                                                                <label for="0_1">Calendar</label>
+                                                            </div>
+                                                            <div class="rb-flx-style">
+                                                                <div class="el-radio el-radio-green">
+                                                                    <input type="radio" name="rb_opt_nm_7" id="0_2" value="rb_opt_val_4">
+                                                                    <label class="el-radio-style" for="0_2"></label>
+                                                                </div>
+                                                                <label for="0_2">Text Block</label>
+                                                            </div>
+                                                        </div>   
+                                                    </div>
+                                                </div>
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Delivery On:</label>
+                                                    </div>
+                                                    <div class="col-right">                                                       
+                                                        <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <div class="custom-control custom-checkbox mr-3">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                                                <label class="custom-control-label" for="customCheck1">Specific Dates</label>
+                                                            </div>                                                                
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+                                                                <label class="custom-control-label" for="customCheck2">Recurring Dates</label>
+                                                            </div>
+                                                        </div>                                                       
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="ss-foot">
+                        <button type="button">Save Settings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Content Area - End-->
+
+        <!--footer-->
+        <div class="prdd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We're always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer End-->
+        <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-tokenfield.js"></script>
+        <script src="assets/js/custom.js"></script>
+    </div>    
+</body>
+</html>
